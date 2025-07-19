@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: anrivaegypt_bot
+    name: Anrivaegypt_bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
     envVars:
-      - key: BOT_TOKEN
-        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.13
